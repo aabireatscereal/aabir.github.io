@@ -3,14 +3,16 @@
     <head>
         <title>Aabir Banerjee</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
         <nav id="itmoves">
             <div id="navbar">
-                <h1 class="navitems">HOME</h1>
+                <h1 class="navitems"><i id="navicon"class="bi bi-house-fill"></i>HOME</h1>
                 <a href="aboutme.html">
                     <h1 class="navitems">ABOUT ME</h1>
                 </a>
+
                 <a href="myprojects.html">
                     <h1 class="navitems">MY PROJECTS</h1>
                 </a>
@@ -24,6 +26,14 @@
             <h2 id="notchopen" onclick=openbackup()>____</h2>
             
         </nav>
+        <section id="nameheader">
+            <div id="headername">
+                    <h1 id="name">My name is Aabir Banerjee</h1>
+                    <h3 id="desc">I code, obsess over Doctor Who and more.</h3>
+                    <h4 id="smallref">Learn more <a href="aboutme.html">about me</a></h4>
+                
+            </div>
+        </section>
     </body>
     <script>
         function collapse() {
@@ -33,7 +43,7 @@
         }
 
         function openbackup() {
-            document.getElementById('itmoves').style.marginTop = "20px";
+            document.getElementById('itmoves').style.marginTop = "10px";
             document.getElementById('notchcollapse').style.display = "flex";
             document.getElementById('notchopen').style.display = "none";
         }
