@@ -5,6 +5,37 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>This is Aabir Banerjee.</h1>
+        <nav id="itmoves">
+            <div id="navbar">
+                <h1 class="navitems">HOME</h1>
+                <a href="aboutme.html">
+                    <h1 class="navitems">ABOUT ME</h1>
+                </a>
+                <a href="myprojects.html">
+                    <h1 class="navitems">MY PROJECTS</h1>
+                </a>
+                <a href="achievements.html">
+                    <h1 class="navitems">ACHIEVEMENTS</h1>
+                </a>
+                
+            </div>
+            
+            <h2 id="notchcollapse" onclick=collapse()>____</h2>
+            <h2 id="notchopen" onclick=openbackup()>____</h2>
+            
+        </nav>
     </body>
+    <script>
+        function collapse() {
+            document.getElementById('itmoves').style.marginTop = "-50px";
+            document.getElementById('notchcollapse').style.display = "none";
+            document.getElementById('notchopen').style.display = "flex";
+        }
+
+        function openbackup() {
+            document.getElementById('itmoves').style.marginTop = "20px";
+            document.getElementById('notchcollapse').style.display = "flex";
+            document.getElementById('notchopen').style.display = "none";
+        }
+    </script>
 </html>

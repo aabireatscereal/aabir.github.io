@@ -1,0 +1,60 @@
+body {
+    margin:0px;
+    height:1000px;
+}
+
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:10px;
+    transition: 2s;
+}
+
+#navbar {
+    background-color: rgba(255, 127, 80,0.8);
+    color:white;
+    display:flex;
+    border-radius:80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:80px;
+    
+    position:fixed;
+}
+
+.navitems {
+    margin-right:20px;
+    margin-left:20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar > a {
+    color:white;
+    cursor: pointer;
+}
+
+#notchcollapse {
+    display:flex;
+}
+
+#notchcollapse, #notchopen {
+    margin-top:40px;
+    color:white;
+    position: fixed;
+    cursor:pointer;
+    transition: 2s;
+}
+
+#notchcollapse:hover, #notchopen:hover {
+    color:lightslategrey;
+}
+
+#notchopen {
+    display:none;
+}
+
+
+
