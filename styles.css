@@ -4,7 +4,7 @@
 
 body {
     margin:0px;
-    background-color: coral;
+    background-color:coral;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
 }
 
 #navbar {
-    background-color: rgba(255, 120, 80, 1);
+    background-color:coral;
     color:black;
     display:flex;
     width:70%;
@@ -76,7 +76,7 @@ body > #nameheader {
 }
 
 #nameheader {
-    background-color: coral;
+    background-color:coral;
     color:white;
     padding: 100px;
     display:flex;
@@ -105,7 +105,52 @@ body > #nameheader {
     margin-top: 15px;
 }
 
-@media (max-width:980px) {
+#framethese,#framedphotos {
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color:rgb(255, 150, 111);
+    height: 100%;
+}
+
+#framethese {
+    padding:30px
+}
+
+#framethese > h1 {
+    font-weight:80px;
+    font-size:50px;
+}
+
+#framethese > h2 {
+    font-size:25px;    
+}
+
+#framedphotos {
+    display:flex;
+    justify-content: center;
+    padding:40px;
+    margin:0px;
+}
+
+#framedphotos > .frame > .framed {
+    padding:100px;
+    padding-bottom: 100px;
+    background-color: white;
+    padding: right 30px left 30px;
+    margin-bottom:0px;
+    image-resolution: 200px 200px;
+}
+
+
+#framedphotos > .frame > h1 {
+    padding:100px;
+    padding-bottom: 50px;
+    background-color: white;
+    margin-top:0px;
+}
+
+@media (max-width:1029px) {
     .navitems {
         display:none;
     }
@@ -119,7 +164,7 @@ body > #nameheader {
     }
 }
 
-@media (min-width:981px) {
+@media (min-width:1030px) {
     #navbar > #naviconhouse,#naviconabtme,#naviconproj,#naviconachiv  {
         display:none;
     }
